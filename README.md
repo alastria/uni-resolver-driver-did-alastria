@@ -3,7 +3,7 @@
 
 # Overview
 
-This is a [Universal Resolver](https://github.com/decentralized-identity/universal-resolver/) driver for [AlastriaID](https://github.com/alastria/alastria-identity/wiki), the self-sovereign identity initiative by [Alastria](https://alastria.io/) Consortium. This project provides an implementation for **did:ala:quor** identifiers, for **MPV2** version of AlastriaID in [AlastriaT network](https://github.com/alastria/alastria-node-quorum).
+This is a [Universal Resolver](https://github.com/decentralized-identity/universal-resolver/) driver for [AlastriaID](https://github.com/alastria/alastria-identity/wiki), the self-sovereign identity initiative by [Alastria](https://alastria.io/) Consortium. This project provides an implementation for **did:ala:quor** identifiers, for **MVP2** version of AlastriaID in [AlastriaT network](https://github.com/alastria/alastria-node-quorum).
 
 The result it's a document with this parts:
 
@@ -21,7 +21,7 @@ did:ala:quor:redT:ec27f358fd0d11d8934ceb51305622ae79b6ad15
 ### Build and Run
 
 ```sh
-docker build -f Dockerfile src -t alastria/uni-resolver-driver-did-alastria
-docker run -d -p 8080:8080 alastria/uni-resolver-driver-did-alastria:latest
+docker build -f Dockerfile src -t alastria/uni-resolver-driver-did-alastria:mvp2
+docker run -d -p 8080:8080 alastria/uni-resolver-driver-did-alastria:mvp2
 curl -X GET http://localhost:8080/1.0/identifiers/did:ala:quor:redT:ec27f358fd0d11d8934ceb51305622ae79b6ad15
 ```
